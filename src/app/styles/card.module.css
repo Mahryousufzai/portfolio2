@@ -119,10 +119,17 @@
   }
 
   .cardImage {
-      height: 180px; /* Adjust image size for very small screens */
+    width: 100%;  
+    height: auto; /* Adjust image size for very small screens */
   }
 
   .tagsContainer {
-      gap: 6px; /* Less gap between tags on small screens */
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 6px; /* Less gap between tags on small screens */
   }
+}
+.tag {
+  margin: 5px;
+  font-size: 0.9rem;
 }

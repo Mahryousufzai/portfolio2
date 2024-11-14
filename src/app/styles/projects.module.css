@@ -13,7 +13,7 @@
     justify-items: center;
   }
   
-  @media (min-width: 768px) {
+  @media (min-width: 600px) {
     .projectsGrid {
       grid-template-columns: repeat(2, 1fr); /* Two columns for medium screens */
     }

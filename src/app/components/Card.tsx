@@ -16,6 +16,7 @@ const Card: React.FC<PropsType> = ({ title, desc, img, tags }) => {
                 <Image
                     className={styles.cardImage}
                     src={img}
+                      layout="responsive"
                     width={350}
                     height={350}
                     alt={title}
