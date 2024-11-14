@@ -13,7 +13,7 @@ const Contact = () => {
             Get In Touch
           </h2>
           <p className={styles.description} data-aos="fade-down-left">
-            If you have any questions or would like to collaborate, please don't hesitate to reach out.
+            If you have any questions or would like to collaborate, please don&apos;t hesitate to reach out.
           </p>
           <div className={styles.contactItem} data-aos="fade-down-left">
             <IoMdMail size={30} />
