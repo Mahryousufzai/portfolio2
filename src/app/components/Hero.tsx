@@ -10,7 +10,7 @@ const Hero = () => {
         <div className={styles.emptyDiv}></div>
         <div className={styles.textContent}>
           <div>
-            <p data-aos="fade-down-right">I'm</p>
+            <p data-aos="fade-down-right">I&apos;m</p>
             <p data-aos="fade-down-left">Mehar</p>
             <p data-aos="fade-down-left">Ali</p>
           </div>
