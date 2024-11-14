@@ -1,0 +1,92 @@
+/* Main Container Styles */
+.main {
+  padding-top: 2rem;
+}
+
+.menuLink a {
+  text-decoration: none;
+  color: #fff; /* White color for menu links */
+  font-weight: 500;
+  display: block; /* Ensures links fill the space */
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease; /* Smooth transition */
+}
+
+.menuLink a:hover {
+  color: #0ef95c; /* Green color on hover */
+  background-color: rgba(14, 249, 92, 0.1); /* Light green background on hover */
+}
+
+.menuLink a:active, .menuLink a:focus {
+   /* White text on active/focus */
+  background-color: #0ef95c; /* Green background on active/focus */
+  outline: none; /* Remove default focus outline */
+}
+
+/* Mobile Menu - Optional close button styles */
+.mobileMenuClose {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  color: #333;
+}
+
+/* Mobile Menu Styles */
+.md:hidden {
+  display: block !important; /* Ensures it's only hidden on md screens and larger */
+}
+
+.mobileMenu {
+  background-color: #0f172a; /* Dark background for mobile menu */
+  color: white; /* White text color */
+  position: absolute;
+  top: 20px;
+  left: 0;
+  right: 0;
+  text-align: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 1rem 0;
+}
+
+.mobileMenu li {
+  padding: 1rem;
+}
+
+.mobileMenu li a {
+  color: white;
+}
+
+.mobileMenu li a:hover {
+  background-color: #0ef95c; /* Hover effect */
+  color: #fff;
+}
+
+/* Desktop Menu (Hidden on small screens) */
+@media (min-width: 768px) {
+  .menuLink a {
+    font-size: 1.2rem;
+    padding: 1rem;
+  }
+}
+
+/* For mobile views (Below md breakpoint) */
+@media (max-width: 767px) {
+  .main {
+    padding-top: 1rem;
+  }
+
+  .menuLink a {
+    font-size: 1.5rem; /* Larger text for mobile */
+    padding: 1.5rem 2rem; /* Increase padding for better touch interaction */
+  }
+
+  .mobileMenu {
+    display: none; /* Ensure it's hidden by default on mobile */
+  }
+
+  .menuLink {
+    padding: 0.5rem 0;
+  }
+}

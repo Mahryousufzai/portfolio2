@@ -1,0 +1,64 @@
+/* Heading container */
+.headingContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 8rem; /* Top padding for spacing */
+  margin-bottom: 3rem; /* Bottom margin to space the heading from content below */
+}
+
+/* Title styling */
+.title {
+  font-size: 2.5rem; /* Default font size */
+  font-weight: bold;
+  color: #10b981; /* Tailwind's green-500 color in hex format */
+  text-align: center;
+  text-decoration: underline;
+  padding: 0 1rem; /* Add padding to avoid text touching the edges */
+  transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Responsive Styles */
+
+/* For medium screens like tablets */
+@media (max-width: 1024px) {
+  .headingContainer {
+    padding-top: 6rem; /* Reduced top padding for tablets */
+    margin-bottom: 2rem; /* Adjust bottom margin */
+  }
+
+  .title {
+    font-size: 2rem; /* Slightly smaller font size on tablets */
+  }
+}
+
+/* For small screens like mobile devices */
+@media (max-width: 768px) {
+  .headingContainer {
+    padding-top: 4rem; /* Reduced padding for mobile */
+    margin-bottom: 1.5rem; /* Smaller bottom margin for mobile */
+  }
+
+  .title {
+    font-size: 1.8rem; /* Smaller font size on mobile */
+  }
+}
+
+/* For very small screens (portrait mobile devices) */
+@media (max-width: 480px) {
+  .headingContainer {
+    padding-top: 3rem; /* Further reduce top padding */
+    margin-bottom: 1rem; /* Reduced bottom margin */
+  }
+
+  .title {
+    font-size: 1.6rem; /* Even smaller font size on very small screens */
+    padding: 0 0.5rem; /* Reduced padding for smaller screens */
+  }
+}
+
+/* Optional: Hover effect for the title */
+.title:hover {
+  color: #06b755; /* Slightly darker shade of green for hover */
+  transform: scale(1.05); /* Slight scale-up effect */
+}

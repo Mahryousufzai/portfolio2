@@ -2,26 +2,63 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@layer base{
+    body{
+        color:#fff;
+        background-color: #000000;
+    }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+@layer components{
+    .menuLink{
+        @apply cursor-pointer hover:text-[#c5c5c5];
+    }
+
+    .tags{
+        background-color: rgb(68, 47, 47);
+        margin-right: 0.5;
+        margin-top: 0.5;
+        padding: 3px 10px;
+        display: inline block;
+        color: #fff;
+        font-size: 12px;
+
+    }
+
+    .tags:last-child{
+        margin-right: 0;
+    }
+    .tags:nth-child(2){
+        background-color: burlywood;
+    }
+}
+.tags:nth-child(3){
+    background-color: rgb(7, 10, 51);
+}
+.tags:nth-child(4){
+    background-color: rgb(72, 34, 8);
+}
+.tag-0 {
+    background-color: #FF5733; /* Example color */
+    color: white;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.tag-1 {
+    background-color: #33FF57; /* Example color */
+    color: white;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.tag-2 {
+    background-color: #3357FF; /* Example color */
+    color: white;
+}
+
+.tag-3 {
+    background-color: #F1C40F; /* Example color */
+    color: white;
+}
+
+.tag-4 {
+    background-color: #9B59B6; /* Example color */
+    color: white;
 }

@@ -1,0 +1,71 @@
+/* Container for About section */
+.aboutContainer {
+  padding-top: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+/* Heading for About Me */
+.heading {
+  font-size: 2.5rem; /* Equivalent to text-4xl */
+  font-weight: 600;
+  text-align: center; /* Centering the heading */
+  margin-bottom: 1rem;
+}
+
+/* Description text */
+.description {
+  font-size: 1rem; /* Equivalent to text-lg */
+  color: grey; /* Equivalent to text-gray-500 */
+  padding-top: 1rem;
+  text-align: center; /* Centering description text */
+  line-height: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+/* Medium devices (tablets) */
+@media (min-width: 768px) {
+  .heading {
+    font-size: 3rem; /* Equivalent to md:text-5xl */
+  }
+
+  .description {
+    font-size: 1.1rem; /* Slightly bigger text on tablet screens */
+    text-align: left; /* Left-align text on bigger screens */
+    max-width: 1000px;
+  }
+}
+
+/* Small devices (mobile screens) */
+@media (max-width: 768px) {
+  .heading {
+    font-size: 2rem; /* Smaller font size for mobile screens */
+  }
+
+  .description {
+    font-size: 1rem; /* Ensure the description stays readable */
+    text-align: center; /* Center-align description on small screens */
+    line-height: 1.6rem;
+    padding-top: 1rem;
+  }
+}
+
+/* Large devices (extra large screens) */
+@media (min-width: 1200px) {
+  .aboutContainer {
+    padding-top: 3rem; /* Add more padding on larger screens */
+  }
+
+  .heading {
+    font-size: 4rem; /* Larger heading on large screens */
+  }
+
+  .description {
+    font-size: 1.2rem; /* Larger description text on large screens */
+    max-width: 900px;
+  }
+}

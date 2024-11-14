@@ -1,0 +1,107 @@
+/* Container for Hero section with background */
+.heroContainer {
+  min-height: 100vh;
+  background-image: url('/my_image.png%20-%20Copy.png');
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  background-size: 15%; /* Cover the entire container */
+  background-position: left 100px top 100px; /* Make sure the background is fixed */
+}
+
+/* Hero Content Section with grid layout */
+.heroContent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two equal columns by default */
+  height: calc(100vh - 60px); /* Ensure it takes full height, adjusting for navbar */
+  container: right;/* Vertically center the content */
+  /* Add padding to avoid text touching edges */
+}
+
+/* Text content section */
+.textContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left; /* Adjust for better readability */
+  font-size: 2rem; /* Default font size for smaller devices */
+  color: #ffffff;
+  font-weight: bold;
+  line-height: 1.1;
+  padding-left: 20px;
+}
+
+/* Empty div for alignment on large screens */
+.emptyDiv {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .emptyDiv {
+    display: block;
+  }
+}
+
+/* Adjust font sizes for large screens */
+@media (min-width: 640px) {
+  .textContent {
+    font-size: 3rem; /* Larger font size for tablets */
+  }
+}
+
+@media (min-width: 1024px) {
+  .textContent {
+    font-size: 4rem; /* Even larger font size for desktops */
+  }
+}
+
+/* Animation settings */
+.heroContainer [data-aos="fade-down-right"] {
+  animation: fadeInRight 1s ease-out;
+}
+
+.heroContainer [data-aos="fade-down-left"] {
+  animation: fadeInLeft 1s ease-out;
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Responsive adjustments for mobile screens */
+@media (max-width: 768px) {
+  .heroContent {
+    grid-template-columns:(2, 1fr); /* Stack content vertically on small screens */
+    padding: 2rem 1rem; /* Adjust padding */
+  }
+
+  .textContent {
+    font-size: 1.5rem; /* Smaller font size for mobile */
+    padding-left: 0; /* Remove left padding on mobile */
+  }
+
+
+}
+
+@media (max-width: 480px) {
+  .textContent {
+    font-size: 1.25rem; /* Even smaller font size on very small screens */
+  }
+}

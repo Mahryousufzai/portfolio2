@@ -1,0 +1,178 @@
+/* Container for the contact form */
+.container {
+  padding-top: 8rem;
+  padding-left: 1rem; /* Add some left padding for small screens */
+  padding-right: 1rem; /* Add some right padding for small screens */
+}
+
+/* Heading */
+.heading {
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center; /* Center-align the heading */
+}
+
+/* Description */
+.description {
+  color: #4B5563; 
+  font-size: 1.125rem; 
+  padding-top: 0.5rem;
+  text-align: center; /* Center-align the description */
+}
+
+/* Contact items (email and phone) */
+.contactItem {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+  font-size: 1.1rem; /* Increase font size slightly for clarity */
+}
+
+/* Input and textarea styling */
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.inputField,
+.textareaField {
+  height: 2.5rem;
+  background: transparent;
+  border: 2px solid #0dff00;
+  padding-left: 1rem; /* Reduced padding for better alignment */
+  padding-right: 1rem;
+  border-radius: 0.25rem; /* Rounded borders for a cleaner look */
+}
+
+/* Make textarea field bigger for mobile screens */
+.textareaField {
+  resize: vertical;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+/* Send button */
+.sendButton {
+  background-color: #00ff04;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.375rem;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.sendButton:hover {
+  background-color: #00ff04; /* Slightly darker green on hover */
+}
+
+/* Responsive Styles */
+
+/* Medium devices (tablets) */
+@media (max-width: 1024px) {
+  .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr; /* Stack the columns on tablets */
+  }
+
+  .heading {
+    font-size: 2.5rem;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .contactItem {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+  }
+
+  .inputField,
+  .textareaField {
+    font-size: 1rem;
+  }
+
+  .sendButton {
+    width: 100%; /* Make the button full-width on smaller screens */
+  }
+}
+
+/* Small devices (mobile screens) */
+@media (max-width: 768px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr; /* Stack the columns */
+    gap: 2rem; /* Add some gap between the sections */
+  }
+
+  .heading {
+    font-size: 2rem; /* Adjust the font size */
+    text-align: center;
+  }
+
+  .description {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .contactItem {
+    font-size: 1rem;
+    gap: 1rem; /* Increase gap for clarity */
+  }
+
+  .inputField,
+  .textareaField {
+    font-size: 1rem;
+    height: 2.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .textareaField {
+    height: 150px; /* Ensure textarea is large enough for mobile screens */
+  }
+
+  .sendButton {
+    width: 100%; /* Make button full-width on mobile */
+    padding: 0.75rem; /* Larger padding for better touch targets */
+  }
+}
+
+/* Extra small devices (portrait mobile screens) */
+@media (max-width: 480px) {
+  .container {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .heading {
+    font-size: 1.5rem; /* Smaller font size */
+  }
+
+  .description {
+    font-size: 0.9rem;
+  }
+
+  .contactItem {
+    font-size: 0.9rem;
+  }
+
+  .inputField,
+  .textareaField {
+    font-size: 0.9rem;
+    height: 2.2rem;
+  }
+
+  .sendButton {
+    padding: 0.5rem 1rem; /* Reduce padding on extra small devices */
+  }
+}
