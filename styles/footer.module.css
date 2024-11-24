@@ -3,10 +3,10 @@
   margin-top: 4rem; /* Space above the footer */
   padding: 1.5rem 0; /* Padding around the text */
   text-align: center;
-  background-color: rgb(8, 233, 94); /* Accent color */
+  background-color: rgb(34, 203, 99); /* Accent color */
   color: white;
   font-size: 1rem; /* Base font size */
-  border-top: 2px solid #ffffff; /* Optional: Add a border at the top for a sleek look */
+  /* Optional: Add a border at the top for a sleek look */
   box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Optional: Subtle shadow for a floating effect */
 }
 

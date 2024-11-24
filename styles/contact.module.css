@@ -1,8 +1,9 @@
-/* Container for the contact form */
 .container {
   padding-top: 8rem;
-  padding-left: 1rem; /* Add some left padding for small screens */
-  padding-right: 1rem; /* Add some right padding for small screens */
+  padding-left: 1rem; 
+  padding-right: 1rem;  
+  overflow: hidden;
+  margin: 0px 20px;
 }
 
 /* Heading */
@@ -39,7 +40,7 @@
 .textareaField {
   height: 2.5rem;
   background: transparent;
-  border: 2px solid #0dff00;
+  border: 2px solid #056d00;
   padding-left: 1rem; /* Reduced padding for better alignment */
   padding-right: 1rem;
   border-radius: 0.25rem; /* Rounded borders for a cleaner look */

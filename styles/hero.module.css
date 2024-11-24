@@ -1,0 +1,30 @@
+.heroContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 150px;
+  overflow: hidden;
+  height: 86vh;
+  align-items: center;
+}
+
+.imgDiv img {
+  height: fit-content;
+  width: 200px;
+}
+.textDiv p{
+  font-size: 64px;
+  font-weight: bold;
+}
+
+@media (max-width: 640px) {
+  .heroContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 100%;
+    padding-top: 25px;
+  }
+}

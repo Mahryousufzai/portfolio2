@@ -5,7 +5,14 @@
 @layer base{
     body{
         color:#fff;
-        background-color: #000000;
+        background: linear-gradient(to bottom, 
+        #003366,  /* Midnight Blue */
+        #2b3c4c,  /* Slate Gray */
+        #144545,  /* Teal */
+        #2f206c,  /* Soft Gold */
+        #003366,  /* Ivory */
+        #6f3440   /* Crimson */
+    );
     }
 }
 

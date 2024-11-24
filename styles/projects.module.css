@@ -1,0 +1,26 @@
+.mainPro {
+  overflow: hidden;
+  margin: 0px auto;
+  padding-top: 40px;
+}
+ 
+.cardX {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 30px;
+  padding: 0px 30px;
+}
+  @media (max-width: 786px) {
+     .cardX {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+     }
+  }
+  
+  @media (max-width: 640px) {
+    .cardX {
+      display: grid;
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+     }
+  }
+  

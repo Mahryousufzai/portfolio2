@@ -32,10 +32,6 @@ export default function Home() {
     <Skils />
     <Contact />
     <About />
-
-  
-
-  
    </main>
 
   );

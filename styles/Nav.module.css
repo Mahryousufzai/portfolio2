@@ -1,25 +1,21 @@
-/* Main Container Styles */
-.main {
-  padding-top: 2rem;
-}
 
 .menuLink a {
   text-decoration: none;
-  color: #fff; /* White color for menu links */
+  color: #fff;  
   font-weight: 500;
-  display: block; /* Ensures links fill the space */
-  padding: 0.5rem 1rem;
-  transition: all 0.3s ease; /* Smooth transition */
+  display: block; 
+ 
+  transition: all 0.3s ease;  
 }
 
 .menuLink a:hover {
-  color: #0ef95c; /* Green color on hover */
+  color: #0ef95c; 
   background-color: rgba(14, 249, 92, 0.1); /* Light green background on hover */
 }
 
 .menuLink a:active, .menuLink a:focus {
    /* White text on active/focus */
-  background-color: #0ef95c; /* Green background on active/focus */
+  background-color: #2ec360; /* Green background on active/focus */
   outline: none; /* Remove default focus outline */
 }
 

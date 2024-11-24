@@ -1,7 +1,7 @@
 import React from 'react';
 import { IoMdMail } from "react-icons/io";
 import { BsFillTelephoneInboundFill } from "react-icons/bs";
-import styles from '../styles/contact.module.css'
+import styles from '../../../styles/contact.module.css'
 
 const Contact = () => {
   return (

@@ -1,12 +1,13 @@
+"use client"
 import React, { useState } from 'react';
 import { LuMenu } from "react-icons/lu";
-import styles from '../styles/Nav.module.css';
+import styles from '../../../styles/Nav.module.css';
 
 const Navbar = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false); // State to toggle the menu
+  const [isMenuOpen, setIsMenuOpen] = useState(false); 
 
   const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen); // Toggle the menu visibility
+    setIsMenuOpen(!isMenuOpen); 
   };
 
   return (

@@ -1,10 +1,10 @@
-/* Container for About section */
 .aboutContainer {
   padding-top: 2rem;
   padding-left: 1rem;
   padding-right: 1rem;
   margin: 0 auto;
   max-width: 1200px;
+  overflow: hidden;
 }
 
 /* Heading for About Me */
